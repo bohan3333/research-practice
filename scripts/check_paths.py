@@ -33,4 +33,4 @@ if data_dir.is_dir():
     else:
         print("data 文件夹目前为空。")
 else:
-    print("没有找到 data 文件夹，请检查项目目录。")
+    print("没有找到 data 文件夹，检查项目目录。")
