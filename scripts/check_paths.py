@@ -25,7 +25,14 @@ if data_dir.is_dir():
     print("data 文件夹存在。")
 
     items = list(data_dir.iterdir())
+    file_count = 0
 
+    for item in items:
+      if item.is_file():
+        file_count += 1
+
+    print("data 中直接包含的文件数量：", file_count)
+    
     if items:
         print("data 中的内容：")
         for item in items:
